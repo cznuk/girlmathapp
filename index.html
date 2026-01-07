@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Girl Math - Justify Any Purchase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --background: #FAF8F2;
+            --text: #1F1A14;
+            --text-secondary: #736B61;
+            --accent: #B87359;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 3px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(48px, 12vw, 80px);
+            font-weight: 400;
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+        
+        .tagline {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: clamp(20px, 5vw, 28px);
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+        
+        .divider {
+            width: 40px;
+            height: 2px;
+            background: var(--text);
+            margin-bottom: 32px;
+        }
+        
+        .description {
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            max-width: 400px;
+            margin-bottom: 48px;
+        }
+        
+        .app-store-badge {
+            display: inline-block;
+            transition: opacity 0.2s;
+        }
+        
+        .app-store-badge:hover {
+            opacity: 0.8;
+        }
+        
+        .app-store-badge img {
+            height: 54px;
+        }
+        
+        .coming-soon {
+            display: inline-block;
+            padding: 16px 32px;
+            border: 1px solid var(--text);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: var(--text);
+            text-decoration: none;
+        }
+        
+        .example {
+            background: white;
+            padding: 32px;
+            margin-top: 64px;
+            border: 1px solid rgba(31, 26, 20, 0.08);
+        }
+        
+        .example-label {
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 2px;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        
+        .example-price {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .example-text {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            color: var(--text);
+        }
+        
+        footer {
+            padding-top: 64px;
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        
+        footer a {
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            color: var(--text);
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 48px 20px;
+            }
+            
+            .example {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <p class="label">INTRODUCING</p>
+            <h1>Girl Math</h1>
+            <p class="tagline">Justify any purchase.</p>
+            <div class="divider"></div>
+            <p class="description">
+                Turn buyer's remorse into buyer's confidence. Girl Math uses creative mental accounting to transform any purchase into a sound financial decision.
+            </p>
+            
+            <!-- Replace with actual App Store link when available -->
+            <span class="coming-soon">COMING SOON</span>
+            
+            <div class="example">
+                <p class="example-label">EXAMPLE</p>
+                <p class="example-price">$287</p>
+                <p class="example-text">
+                    Twice a week for two years is 208 wears. That's <strong>$1.38 per wear</strong>. You'd spend more on a latte you won't even finish.
+                </p>
+            </div>
+        </div>
+        
+        <footer>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="mailto:girlmathteam@icloud.com">Contact</a>
+        </footer>
+    </div>
+</body>
+</html>
+
